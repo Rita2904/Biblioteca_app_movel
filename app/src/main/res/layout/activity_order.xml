@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.OrderActivity">
+
+    <include
+        layout="@layout/navigation_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9CD7F4"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_order_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9CD7F4"
+            android:minHeight="48dp"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="serif"
+                android:text="@string/order_name"
+                android:textColor="#5E35B1"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/tv_order_name"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="serif"
+                android:text="@string/book_title"
+                android:textColor="#5E35B1"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_order_title"
+                android:layout_width="280sp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="serif"
+                android:text="@string/order_email"
+                android:textColor="#5E35B1"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/tv_order_email"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:textSize="18sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="50dp">
+
+            <ImageButton
+                android:id="@+id/btn_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/check_icon"
+                tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

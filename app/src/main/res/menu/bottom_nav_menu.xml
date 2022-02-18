@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/menu_item_home"
+        android:id="@+id/management_home"
+        android:icon="@drawable/home_icon"/>
+    <item android:title="@string/comment_management"
+        android:id="@+id/management_comments"
+        android:icon="@drawable/comment_icon"/>
+    <item android:title="@string/order_management"
+        android:id="@+id/management_orders"
+        android:icon="@drawable/order_icon"/>
+    <item android:title="@string/management_logout"
+        android:id="@+id/management_logout"
+        android:icon="@drawable/logout_icon"/>
+</menu>

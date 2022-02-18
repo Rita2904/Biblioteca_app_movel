@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.CommentActivity">
+
+    <include
+        layout="@layout/navigation_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="@string/post_author"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/tv_comment_commentAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/accountName"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="2dp"
+            android:text="@string/comments"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_comment_commentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/comments"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_comment_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:background="#C7C6CA"
+            android:fontFamily="serif"
+            android:gravity="fill_horizontal"
+            android:padding="10dp"
+            android:text="@string/save_comment"
+            android:textColor="#050505"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/save_icon" />
+
+        <TextView
+            android:id="@+id/tv_comment_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#C7C6CA"
+            android:fontFamily="serif"
+            android:gravity="fill_horizontal"
+            android:padding="10dp"
+            android:text="@string/order_cancel"
+            android:textColor="#050505"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/cancel_icon" />
+
+    </LinearLayout>
+
+</LinearLayout>

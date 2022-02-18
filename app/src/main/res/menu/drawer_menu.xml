@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/menu_item_home" />
+
+        <item
+            android:id="@+id/books"
+            android:icon="@drawable/book_icon"
+            android:title="@string/menu_item_books" />
+
+        <item
+            android:id="@+id/blog"
+            android:icon="@drawable/blog_icon"
+            android:title="@string/menu_item_blog" />
+    </group>
+
+    <item android:title="@string/management">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/management"
+                    android:icon="@android:drawable/ic_lock_idle_lock"
+                    android:title="@string/management" />
+            </group>
+        </menu>
+    </item>
+</menu>
